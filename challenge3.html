@@ -77,10 +77,10 @@
     var year = $('input[name="standing"]');
     var fruit = $('input[name="fruit"]');
     if((fruit.is(":checked")) && (year.is(":checked"))){
-      return true;
+      return;
     }
     alert("Pick a fruit and a year!");
-    return false;
+    event.preventDefault();
   })
 </script>
 </body>
